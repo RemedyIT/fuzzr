@@ -55,11 +55,11 @@ task :gem do
     gem.email = 'mcorino@remedy.nl'
     gem.homepage = "https://github.com/RemedyIT/fuzzr"
     gem.authors = ['Martin Corino', 'Johnny Willemsen']
-    gem.files = %w{LICENSE README.rdoc}.concat(Dir.glob('{lib,bin,fuzzers}/**/*'))
+    gem.files = %w{LICENSE README.rdoc}.concat(Dir.glob('{lib,fuzzers}/**/*'))
     gem.extensions = []
     gem.extra_rdoc_files = %w{LICENSE README.rdoc}
     gem.rdoc_options << '--main' << 'README.rdoc'
-    gem.executables = []
+    gem.executables = %w{fuzz}
     gem.license = 'MIT'
     gem.metadata = {
       "bug_tracker_uri"   => "https://github.com/RemedyIT/fuzzr/issues",
