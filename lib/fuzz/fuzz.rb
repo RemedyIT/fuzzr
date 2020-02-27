@@ -15,12 +15,9 @@ require 'fuzz/log'
 require 'fuzz/system'
 require 'fuzz/options'
 require 'fuzz/fzzr'
+require 'fuzz/version'
 
 module Fuzz
-  VERSION_MAJOR,
-  VERSION_MINOR,
-  VERSION_RELEASE = VERSION.split('.')
-  COPYRIGHT = "Copyright (c) 2012-#{Time.now.year} Remedy IT Expertise BV, The Netherlands".freeze
 
   def self.root_path
     f = File.expand_path(__FILE__)
@@ -242,8 +239,8 @@ module Fuzz
             'List available Fuzzers and exit.') {
       options.load_config
       load_fuzzers
-      puts "TAOX11 fuzz checker #{VERSION_MAJOR}.#{VERSION_MINOR}.#{VERSION_RELEASE}"
-      puts COPYRIGHT
+      puts "TAOX11 fuzz checker #{FUZZ_VERSION_MAJOR}.#{FUZZ_VERSION_MINOR}.#{FUZZ_VERSION_RELEASE}"
+      puts FUZZ_COPYRIGHT
       puts('%-30s %s' % %w{Fuzzer Description})
       puts(('-' * 30)+' '+('-' * 48))
       fuzzers.values.each { |fzzr| puts('%-30s %s' % [fzzr.fuzz_id, fzzr.description]) }
@@ -254,8 +251,8 @@ module Fuzz
     opts.separator ""
     opts.on('-V', '--version',
             'Show version information and exit.') {
-      puts "TAOX11 fuzz checker #{VERSION_MAJOR}.#{VERSION_MINOR}.#{VERSION_RELEASE}"
-      puts COPYRIGHT
+      puts "TAOX11 fuzz checker #{FUZZ_VERSION_MAJOR}.#{FUZZ_VERSION_MINOR}.#{FUZZ_VERSION_RELEASE}"
+      puts FUZZ_COPYRIGHT
       exit
     }
     opts.on('-h', '--help',
