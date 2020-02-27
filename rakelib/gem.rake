@@ -16,7 +16,7 @@ rescue LoadError
   require 'rubygems/package'
 end
 
-require './lib/fuzz'
+require './lib/fuzz/version'
 
 module Fuzz
 
@@ -48,7 +48,7 @@ end
 
 desc 'Build fuzzr gem'
 task :gem do
-  gemspec = Fuzz.define_spec('fuzzr', Fuzz::VERSION) do |gem|
+  gemspec = Fuzz.define_spec('fuzzr', Fuzz::FUZZ_VERSION) do |gem|
     # gem is a Gem::Specification... see https://guides.rubygems.org/specification-reference/ for more options
     gem.summary = %Q{fuzzr}
     gem.description = %Q{Fuzzer}

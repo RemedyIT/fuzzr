@@ -1,6 +1,6 @@
 # encoding: utf-8
 # -------------------------------------------------------------------
-# fuzz.rb - TAOX11 fuzz checker
+# version.rb - TAOX11 fuzz checker
 #
 # Author: Martin Corino
 #
@@ -8,7 +8,10 @@
 # -------------------------------------------------------------------
 
 module Fuzz
-  VERSION = '0.9.6' unless defined? VERSION
-end
 
-require 'fuzz/fuzz'
+  FUZZ_VERSION_MAJOR = 0.freeze
+  FUZZ_VERSION_MINOR = 9.freeze
+  FUZZ_VERSION_RELEASE = 6.freeze
+  FUZZ_VERSION = "#{FUZZ_VERSION_MAJOR}.#{FUZZ_VERSION_MINOR}.#{FUZZ_VERSION_RELEASE}"
+
+end
