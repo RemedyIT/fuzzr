@@ -1,0 +1,5 @@
+.*(C|S|P)\.(h|inl|cpp)
+test\/.*\/tao\/.*
+ridl\/.*
+.*\.erb
+.*\.cmd

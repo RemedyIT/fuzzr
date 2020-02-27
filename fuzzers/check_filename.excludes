@@ -1,0 +1,8 @@
+ChangeLog
+\/MPC$
+MPC\/modules\/GNU.*pm$
+tao\/x11\/Policy.*
+tao\/x11\/.*A\.cpp
+GNUmakefile
+public\/.*(C|S|P|SP)\.(h|inl|cpp)
+ridl\/.*

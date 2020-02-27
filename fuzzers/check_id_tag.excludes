@@ -1,0 +1,3 @@
+.*(C|S|P|SP)\.(h|inl|cpp)
+test\/.*\/tao\/.*
+ridl\/.*

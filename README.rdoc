@@ -1,0 +1,28 @@
+{<img src="https://badge.fury.io/rb/fuzzr.svg" alt="Gem Version" />}[https://badge.fury.io/rb/fuzzr]
+{<img src="https://www.codefactor.io/repository/github/remedyit/fuzzr/badge" alt="CodeFactor" />}[https://www.codefactor.io/repository/github/remedyit/fuzzr]
+
+= fuzz
+
+== DESCRIPTION:
+
+{fuzzr}[https://github.com/RemedyIT/fuzzr] is an open source fuzz check tool
+
+== Bugs
+
+If you find a bug, please report it as {fuzzr issue}[https://github.com/RemedyIT/fuzzr/issues].
+
+== Warranty
+
+This software is provided "as is" and without any express or implied warranties, including, without limitation, the implied warranties of merchantibility and fitness for a particular purpose.
+
+== Installing fuzzr
+
+fuzzr is distributed as a Ruby Gem. You can download and install fuzzr as a Ruby Gem from the common {Rubygems.org}[https://www.rubygems.org/gems/fuzzr] repository by executing the following command:
+
+ $ gem install fuzzr
+
+The RIDL Gem is a Ruby-only Gem without any dependencies.
+
+== Releasing new RIDL Ruby Gem
+
+A new fuzzr ruby gem release can be made by incrementing the fuzzr version in link:lib/fuzz.rb and create a new release on {github}[https://github.com/RemedyIT/fuzzr/releases] matching the new version (for example v2.7.0). The github {Ruby Gem Release}[https://github.com/RemedyIT/ridl/actions?query=workflow%3A%22Ruby+Gem+Release%22] action will automatically create a new gem and push it to {Rubygems.org}[https://www.rubygems.org/gems/fuzzr].
