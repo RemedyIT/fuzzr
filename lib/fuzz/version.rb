@@ -9,9 +9,9 @@
 
 module Fuzz
 
-  FUZZ_VERSION_MAJOR = 0.freeze
-  FUZZ_VERSION_MINOR = 9.freeze
-  FUZZ_VERSION_RELEASE = 8.freeze
+  FUZZ_VERSION_MAJOR = 0
+  FUZZ_VERSION_MINOR = 9
+  FUZZ_VERSION_RELEASE = 8
   FUZZ_VERSION = "#{FUZZ_VERSION_MAJOR}.#{FUZZ_VERSION_MINOR}.#{FUZZ_VERSION_RELEASE}"
   FUZZ_COPYRIGHT = "Copyright (c) 2012-#{Time.now.year} Remedy IT Expertise BV, The Netherlands".freeze
 
