@@ -73,7 +73,7 @@ module Fuzz
     end
 
     def register_fzzr(fzzr)
-      raise RuntimeError, "Duplicate fuzzer registration: #{fzzr.fuzz_id}" if fuzzers.has_key?(fzzr.fuzz_id)
+      raise "Duplicate fuzzer registration: #{fzzr.fuzz_id}" if fuzzers.has_key?(fzzr.fuzz_id)
       fuzzers[fzzr.fuzz_id] = fzzr
       fzzr.setup(options.optparser) if options.optparser && fzzr.respond_to?(:setup) && fzzr_included?(fzzr)
     end
@@ -352,7 +352,7 @@ module Fuzz
           true
         end
       else
-        log_warning(File.readable?(path) ? %Q{Cannot read #{path}} : %Q{Cannot follow symlink #{}path})
+        log_warning(File.readable?(path) ? %Q{Cannot read #{path}} : %Q{Cannot follow symlink #{path}})
         false
       end && result
     end
