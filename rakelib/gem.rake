@@ -48,9 +48,9 @@ end
 
 desc 'Build fuzzr gem'
 task :gem do
-  gemspec = Fuzz.define_spec('fuzzr', Fuzz::FUZZ_VERSION) do |gem|
+  gemspec = Fuzz.define_spec('rite-fuzzr', Fuzz::FUZZ_VERSION) do |gem|
     # gem is a Gem::Specification... see https://guides.rubygems.org/specification-reference/ for more options
-    gem.summary = %Q{fuzzr}
+    gem.summary = %Q{rite-fuzzr}
     gem.description = %Q{Fuzzer}
     gem.email = 'jwillemsen@remedy.nl'
     gem.homepage = "https://github.com/RemedyIT/fuzzr"
