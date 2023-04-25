@@ -1,5 +1,5 @@
-{<img src="https://badge.fury.io/rb/fuzzr.svg" alt="Gem Version" />}[https://rubygems.org/gems/fuzzr]
-{<img src="https://www.codefactor.io/repository/github/remedyit/fuzzr/badge" alt="CodeFactor" />}[https://www.codefactor.io/repository/github/remedyit/fuzzr]
+{rdoc-image:https://badge.fury.io/rb/fuzzr.svg}[https://rubygems.org/gems/fuzzr]
+{rdoc-image:https://www.codefactor.io/repository/github/remedyit/fuzzr/badge}[https://www.codefactor.io/repository/github/remedyit/fuzzr]
 
 = fuzz
 
