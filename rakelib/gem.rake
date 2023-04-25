@@ -52,9 +52,9 @@ task :gem do
     # gem is a Gem::Specification... see https://guides.rubygems.org/specification-reference/ for more options
     gem.summary = %Q{fuzzr}
     gem.description = %Q{Fuzzer}
-    gem.email = 'mcorino@remedy.nl'
+    gem.email = 'jwillemsen@remedy.nl'
     gem.homepage = "https://github.com/RemedyIT/fuzzr"
-    gem.authors = ['Martin Corino', 'Johnny Willemsen']
+    gem.authors = ['Johnny Willemsen']
     gem.files = %w{LICENSE README.rdoc}.concat(Dir.glob('{lib,fuzzers}/**/*'))
     gem.extensions = []
     gem.extra_rdoc_files = %w{LICENSE README.rdoc}
@@ -65,7 +65,7 @@ task :gem do
       "bug_tracker_uri"   => "https://github.com/RemedyIT/fuzzr/issues",
       "source_code_uri"   => "https://github.com/RemedyIT/fuzzr"
     }
-    gem.required_ruby_version = '>= 2.0'
+    gem.required_ruby_version = '>= 2.5'
   end
   Fuzz.build_gem(gemspec)
 end
